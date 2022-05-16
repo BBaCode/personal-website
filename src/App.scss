@@ -1,0 +1,12 @@
+@use "./styles/partials/reset";
+@use "./styles/partials/variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap");
+
+body {
+  font-family: "Roboto Mono", monospace;
+  background-color: $black;
+}
+
+a {
+  color: inherit;
+}

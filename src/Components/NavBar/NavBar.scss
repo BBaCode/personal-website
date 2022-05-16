@@ -1,0 +1,51 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap");
+
+.nav {
+  background-color: $black;
+  color: $teal;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  &__header {
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    @include tablet {
+      padding-left: 0.5rem;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 0.5rem;
+  }
+
+  &__list-item {
+    text-align: center;
+    text-decoration: none;
+    width: 50%;
+    padding-bottom: 0.5rem;
+
+    @include tablet {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  &__list-item-active {
+    border-bottom: solid 1px $teal;
+    color: $teal;
+  }
+}

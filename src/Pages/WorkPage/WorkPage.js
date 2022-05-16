@@ -1,0 +1,59 @@
+import "./WorkPage.scss";
+import moneybee from "../../assets/moneybee.mp4";
+import crypto from "../../assets/cryptotracker.mp4";
+import bandsite from "../../assets/bandsite.mp4";
+import flixdemo from "../../assets/brainflixdemo.mp4";
+import flixsize from "../../assets/_brainflixsize.mp4";
+
+function WorkPage() {
+  return (
+    <div className="work">
+      {/* moneybee, cryptosearch, goal health, make a fourth? */}
+      <div className="work__container">
+        <h2 className="work__title">MoneyBee</h2>
+        <video width="600" height="600" controls>
+          <source src={moneybee} />
+        </video>
+        <p className="work__description">
+          A mobile app designed to teach high school / college kids about
+          personal finance across a variety of topics.
+        </p>
+      </div>
+      <div className="work__container">
+        <h2 className="work__title">CryptoSearch</h2>
+        <video width="600" height="600" controls>
+          <source src={crypto} />
+        </video>
+        <p className="work__description">
+          CryptoSearch is a web app designed to look up the top cryptocurrencies
+          and get a variety of facts about each.
+        </p>
+      </div>
+      <div className="work__container">
+        <h2 className="work__title">BrainFlix</h2>
+        <video width="600" height="600" controls>
+          <source src={flixdemo} />
+        </video>
+        <video width="600" height="600" controls>
+          <source src={flixsize} />
+        </video>
+        <p className="work__description">
+          The purpose of this app is to combine both goals/tasks features with
+          journal/reflection features to give a wholistic self-help app.
+        </p>
+      </div>
+      <div className="work__container">
+        <h2 className="work__title">Bandsite</h2>
+        <video width="600" height="600" controls>
+          <source src={bandsite} />
+        </video>
+        <p className="work__description">
+          The purpose of this app is to combine both goals/tasks features with
+          journal/reflection features to give a wholistic self-help app.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default WorkPage;

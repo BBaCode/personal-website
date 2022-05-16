@@ -1,0 +1,46 @@
+@use "../../styles/partials/variables" as *;
+
+.home {
+  color: $teal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+
+  &__photo-container {
+    background-color: $teal;
+    width: 80%;
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin: 0 0 1rem;
+    border-radius: 50%;
+  }
+
+  &__photo {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+  }
+
+  &__info-container {
+    padding: 1rem 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__info-small {
+    color: $white;
+    text-align: center;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &__info-name {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+}
