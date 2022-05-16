@@ -38,8 +38,9 @@ function WorkPage() {
           <source src={flixsize} />
         </video>
         <p className="work__description">
-          The purpose of this app is to combine both goals/tasks features with
-          journal/reflection features to give a wholistic self-help app.
+          Brainflix is a fully responsive fullstack mock video streaming app
+          made during my bootcamp. You can upload new videos or click on other
+          videos in the sidebar to view whichever you would like.
         </p>
       </div>
       <div className="work__container">
@@ -48,8 +49,9 @@ function WorkPage() {
           <source src={bandsite} />
         </video>
         <p className="work__description">
-          The purpose of this app is to combine both goals/tasks features with
-          journal/reflection features to give a wholistic self-help app.
+          Bandsite is a fully responsive frontend app with the purpose of
+          representing a website for a band. You can add comments on the main
+          page or check out next show dates on the shows page.
         </p>
       </div>
     </div>
