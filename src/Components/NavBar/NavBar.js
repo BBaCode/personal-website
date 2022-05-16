@@ -5,7 +5,7 @@ import { useState } from "react";
 function NavBar() {
   let [navState, setNavState] = useState({
     activeLink: null,
-    links: ["About Me", "Work"],
+    links: ["About", "Work"],
     path: ["/about", "/work"],
   });
 
