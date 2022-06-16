@@ -59,8 +59,10 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography color="white">MoneyBee</Typography>
-        </AccordionSummary>
+          <Typography color="white">
+            <span className="accordion__project">MoneyBee</span>
+          </Typography>
+        </AccordionSummary>{" "}
         <AccordionDetails>
           <Typography>
             A mobile designed web app that gamifies the personal finance
@@ -81,7 +83,9 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography color="white">CryptoSearch</Typography>
+          <Typography color="white">
+            <span className="accordion__project">CryptoSearch</span>
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -104,7 +108,9 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography color="white">BrainFlix</Typography>
+          <Typography color="white">
+            <span className="accordion__project">BrainFlix</span>
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
@@ -131,7 +137,9 @@ export default function CustomizedAccordions() {
         className="accordion__last"
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography color="white">Bandsite</Typography>
+          <Typography color="white">
+            <span className="accordion__project">Bandsite</span>
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

@@ -1,12 +1,16 @@
 @use "../../styles/partials/mixins" as *;
 
 .accordion {
-  &__photo__container {
+  &__photo-container {
     display: flex;
+    justify-content: center;
   }
 
   &__photo {
     width: 100%;
+    @include tablet {
+      width: 50%;
+    }
   }
 
   &__github {
@@ -16,5 +20,11 @@
 
   &__last {
     border-bottom: 1px solid white;
+  }
+
+  &__project {
+    @include tablet {
+      font-size: 1.5rem;
+    }
   }
 }
