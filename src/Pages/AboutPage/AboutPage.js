@@ -6,7 +6,7 @@ function AboutPage() {
   return (
     <div className="about">
       {/* <h2 className="about__title">Brian Bassett</h2> */}
-      <div className="about__container">
+      {/* <div className="about__container">
         <div className="about__info">
           Hello! I am a fullstack engineer from Boston, now living in NYC. After
           graduating with a degree in Finance, I moved to Manhattan to join
@@ -33,21 +33,19 @@ function AboutPage() {
         </div>
         <img className="about__photo" src={comp} alt="comp" />
       </div>
-      <h2 className="about__title">Book Recommendations</h2>
+      <h2 className="about__title">Book Recommendations</h2> */}
       <div className="about__books">
         <div className="about__books-container">
           <span className="about__book-titles">Top 5 NonFiction:</span> <br />
-          <span className="about__books--blue">
-            1. Good to Great - Jim Collins
-          </span>
+          <span>1. Good to Great - Jim Collins</span>
           <br />
           2. Atomic Habits - James Clear (inspired this list)
           <br />
-          <span className="about__books--blue">3. Free Will - Sam Harris</span>
+          <span>3. Free Will - Sam Harris</span>
           <br />
           4. Outliers - Malcolm Gladwell
           <br />
-          <span className="about__books--blue">
+          <span>
             5. Greenlights - Matthew McConaughey (I recommend the audiobook)
           </span>
           <br />
@@ -58,23 +56,15 @@ function AboutPage() {
             Top 5 Fantasy/Science Fiction:
           </span>
           <br />
-          <span className="about__books--blue">
-            1. Lord of the Rings Triology - JRR Tolkien
-          </span>
+          <span>1. Lord of the Rings Triology - JRR Tolkien</span>
           <br />
           2. Ender's Game - Orson Scott Card
           <br />
-          <span className="about__books--blue">
-            {" "}
-            3. Licanius Trilogy - James Islington
-          </span>
+          <span> 3. Licanius Trilogy - James Islington</span>
           <br />
-          4. Fahrenheit 451 - Ray Bradbury
+          Foundations - Isaac Asimov
           <br />
-          <span className="about__books--blue">
-            {" "}
-            5. LightBringer Series - Brent Weeks
-          </span>
+          <span> 5. LightBringer Series - Brent Weeks</span>
           <br />
         </div>
       </div>

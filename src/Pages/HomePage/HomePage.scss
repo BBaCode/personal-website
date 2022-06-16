@@ -33,7 +33,7 @@
     font-weight: 400;
     line-height: 2rem;
     // background-color: #ea3546;
-    background-color: #1b98e0;
+    color: #1b98e0;
     padding: 1rem;
     margin-top: -0.5rem;
     width: 100%;
@@ -48,5 +48,18 @@
   &__work-title {
     font-size: 1.5rem;
     padding: 1rem;
+  }
+
+  &__books {
+    color: #1b98e0;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+
+  &__books-title {
+    color: #1b98e0;
+    width: 100%;
+    padding: 1.5rem 1rem 1rem;
+    font-size: 1.5rem;
   }
 }
