@@ -1,0 +1,20 @@
+@use "../../styles/partials/mixins" as *;
+
+.accordion {
+  &__photo__container {
+    display: flex;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__github {
+    max-width: 30px;
+    padding-bottom: 0.5rem;
+  }
+
+  &__last {
+    border-bottom: 1px solid white;
+  }
+}

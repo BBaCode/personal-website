@@ -1,46 +1,52 @@
 @use "../../styles/partials/variables" as *;
 
 .home {
-  color: $teal;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
-
-  &__photo-container {
-    background-color: $teal;
-    width: 80%;
-    position: relative;
-    height: 250px;
-    width: 250px;
-    margin: 0 0 1rem;
-    border-radius: 50%;
-  }
-
-  &__photo {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
-  }
 
   &__info-container {
-    padding: 1rem 3rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
+    background-color: #1b98e0;
   }
 
   &__info-small {
     color: $white;
-    text-align: center;
+    font-size: 3rem;
     padding-bottom: 1rem;
-    line-height: 1.5rem;
   }
 
   &__info-name {
     font-size: 2rem;
     padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__about {
+    font-weight: 400;
+    line-height: 2rem;
+    // background-color: #ea3546;
+    background-color: #1b98e0;
+    padding: 1rem;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+
+  &__work {
+    background-color: #1b98e0;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+
+  &__work-title {
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 }
