@@ -1,46 +1,112 @@
 @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 .home {
-  color: $teal;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
 
-  &__photo-container {
-    background-color: $teal;
-    width: 80%;
-    position: relative;
-    height: 250px;
-    width: 250px;
-    margin: 0 0 1rem;
-    border-radius: 50%;
-  }
-
-  &__photo {
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    bottom: 0;
-    border-radius: 50%;
+  &__intro {
+    @include tablet {
+      display: flex;
+    }
   }
 
   &__info-container {
-    padding: 1rem 3rem 0rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  &__info-small {
-    color: $white;
-    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
     padding-bottom: 1rem;
-    line-height: 1.5rem;
+    color: white;
+    background-color: $main-blue;
+    @include tablet {
+      max-width: 50%;
+      font-size: 2.75rem;
+      justify-content: center;
+      padding: 1.5rem;
+    }
   }
 
   &__info-name {
     font-size: 2rem;
     padding-bottom: 1rem;
+    text-align: center;
+  }
+
+  &__photo-self {
+    width: 100%;
+
+    @include tablet {
+      height: 100%;
+    }
+  }
+
+  &__about {
+    font-weight: 400;
+    line-height: 2rem;
+    // background-color: #ea3546;
+    color: $main-blue;
+    padding: 1rem;
+    // margin-top: -0.5rem;
+    width: 100%;
+
+    @include tablet {
+      background-color: $main-blue;
+      color: white;
+      border-top: 1px solid white;
+      padding: 1.5rem;
+    }
+  }
+
+  &__photo-accordion {
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__photo-landscape {
+    width: 100%;
+    @include tablet {
+      max-height: 50vh;
+      width: 100vw;
+    }
+    @include tablet {
+      max-height: 75vh;
+    }
+  }
+
+  &__work {
+    background-color: $main-blue;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+
+  &__work-title {
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: white;
+    @include tablet {
+      padding: 1.5rem;
+      font-size: 2rem;
+    }
+  }
+
+  &__books {
+    color: $main-blue;
+    margin-top: -0.5rem;
+    width: 100%;
+  }
+
+  &__books-title {
+    color: $main-blue;
+    width: 100%;
+    padding: 1.5rem 1rem 1rem;
+    font-size: 1.5rem;
+    @include tablet {
+      padding: 1.5rem 1.5rem 0.5rem;
+      font-size: 2rem;
+    }
   }
 }

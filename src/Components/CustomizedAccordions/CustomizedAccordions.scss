@@ -1,0 +1,33 @@
+@use "../../styles/partials/mixins" as *;
+
+.accordion {
+  @include desktop {
+  }
+
+  &__photo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__photo {
+    width: 100%;
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__github {
+    max-width: 30px;
+    padding-bottom: 0.5rem;
+  }
+
+  &__last {
+    border-bottom: 1px solid white;
+  }
+
+  &__project {
+    @include tablet {
+      font-size: 1.5rem;
+    }
+  }
+}
