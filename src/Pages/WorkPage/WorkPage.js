@@ -1,14 +1,14 @@
 import "./WorkPage.scss";
-import moneybee from "../../assets/moneybee.mp4";
-import crypto from "../../assets/cryptotracker.mp4";
-import bandsite from "../../assets/bandsite.mp4";
-import flixdemo from "../../assets/brainflixdemo.mp4";
-import flixsize from "../../assets/_brainflixsize.mp4";
+// import moneybee from "../../assets/moneybee.mp4";
+// import crypto from "../../assets/cryptotracker.mp4";
+// import bandsite from "../../assets/bandsite.mp4";
+// import flixdemo from "../../assets/brainflixdemo.mp4";
+// import flixsize from "../../assets/_brainflixsize.mp4";
 
 function WorkPage() {
   return (
     <div className="work">
-      {/* moneybee, cryptosearch, goal health, make a fourth? */}
+      {/* moneybee, cryptosearch, goal health, make a fourth?
       <div className="work__container">
         <h2 className="work__title">MoneyBee</h2>
         <video width="600" height="600" controls>
@@ -53,7 +53,7 @@ function WorkPage() {
           representing a website for a band. You can add comments on the main
           page or check out next show dates on the shows page.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

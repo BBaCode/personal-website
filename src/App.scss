@@ -1,10 +1,9 @@
 @use "./styles/partials/reset";
 @use "./styles/partials/variables" as *;
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap");
 body {
-  font-family: "Roboto Mono", monospace;
-  background-color: $black;
+  font-family: "Heebo", sans-serif;
+  font-weight: 600;
 }
 
 a {

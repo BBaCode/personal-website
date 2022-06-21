@@ -5,75 +5,20 @@
   display: flex;
   flex-direction: column;
 
-  &__title {
-    padding: 1rem 1rem 0;
-    text-align: center;
-    color: $teal;
-    @include tablet {
-      font-size: 1.5rem;
-      padding-bottom: 1.5rem;
-    }
-  }
-
-  &__info {
-    padding: 1rem;
-    font-size: 0.9rem;
-    line-height: 1.25rem;
-    text-align: center;
-    @include tablet {
-      font-size: 1.1rem;
-      line-height: 1.5rem;
-      padding: 1.5rem;
-    }
-  }
-
-  &__photo {
-    padding: 0 1rem;
-    max-width: 400px;
-    @include tablet {
-      max-width: 50%;
-      padding: 1.5rem;
-    }
-  }
-
-  &__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-      border-bottom: 1px solid $teal;
-    }
-
-    &--reverse {
-      @include tablet {
-        flex-direction: row-reverse;
-      }
-    }
-  }
-
   &__books {
-    padding: 1rem;
+    padding: 0 1rem;
     font-size: 0.75rem;
-    line-height: 1rem;
 
     @include tablet {
       display: flex;
-      padding: 1.5rem;
+      padding: 0.5rem 1.5rem;
       font-size: 1rem;
       line-height: 1.25rem;
       justify-content: space-around;
     }
-
-    &--blue {
-      color: $teal;
-    }
   }
 
-  &__books-container {
+  &__book-container {
     @include tablet {
       width: 40%;
     }
@@ -88,8 +33,20 @@
   &__book-titles {
     font-size: 0.9rem;
     display: block;
+    padding-bottom: 1rem;
+    font-style: italic;
     @include tablet {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
+  }
+
+  &__book-list-items {
+    border-top: 1px solid $main-blue;
+    padding: 1rem 0;
+  }
+
+  &__book-list-items--border {
+    border-bottom: 1px solid $main-blue;
+    margin-bottom: 1rem;
   }
 }
