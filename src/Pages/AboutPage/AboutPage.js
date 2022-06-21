@@ -1,6 +1,4 @@
 import "./AboutPage.scss";
-import me from "../../assets/me.JPG";
-import comp from "../../assets/tech.jpg";
 
 function AboutPage() {
   return (
