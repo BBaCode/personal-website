@@ -1,6 +1,9 @@
 @use "../../styles/partials/mixins" as *;
 
 .accordion {
+  @include desktop {
+  }
+
   &__photo-container {
     display: flex;
     justify-content: center;

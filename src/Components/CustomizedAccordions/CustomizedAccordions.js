@@ -53,7 +53,7 @@ export default function CustomizedAccordions() {
   };
 
   return (
-    <div>
+    <div className="accordion">
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}

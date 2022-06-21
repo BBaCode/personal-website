@@ -60,11 +60,20 @@
     }
   }
 
+  &__photo-accordion {
+    @include desktop {
+      display: flex;
+    }
+  }
+
   &__photo-landscape {
     width: 100%;
     @include tablet {
       max-height: 50vh;
       width: 100vw;
+    }
+    @include tablet {
+      max-height: 75vh;
     }
   }
 

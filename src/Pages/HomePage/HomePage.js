@@ -18,12 +18,11 @@ function HomePage() {
       </div>
       <p className="home__about">
         Born and raised outside of Boston, now lighting up New York City. I love
-        to bring applications, websites and even games to life. Looking to
-        support an innovative team by increasing user experience with
-        pixel-perfect designs and cutting edge functionality. Want to reach out?
-        Check my links at the bottom of the page or feel free to email me at
-        brianbsstt@gmail.com.
+        to bring applications, websites and even games to life. Currently
+        working on mobile applications, financial literacy and investment apps,
+        and generally taking a deeper dive into Computer Science!
       </p>
+
       <div className="home__photo-container">
         <img className="home__photo-landscape" src={nyc} alt="me" />
       </div>
@@ -31,6 +30,7 @@ function HomePage() {
         <h2 className="home__work-title">Work</h2>
         <CustomizedAccordions />
       </div>
+
       <div className="home__books">
         <h2 className="home__books-title">Book Recommendations</h2>
         <AboutPage />
